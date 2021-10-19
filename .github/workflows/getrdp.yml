@@ -22,8 +22,8 @@ jobs:
     - run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: Install goodies
-    - run: Invoke-WebRequest https://ninite.com/discord-notepadplusplus-winrar/ninite.exe -OutFile goodies.exe
-    - run: .\goodies.exe
+      run: Invoke-WebRequest https://ninite.com/discord-notepadplusplus-winrar/ninite.exe -OutFile goodies.exe
+      run: .\goodies.exe
     - name: Create Tunnel
       run: .\ngrok\ngrok.exe tcp 3389
       
