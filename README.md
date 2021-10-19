@@ -3,7 +3,7 @@
 Limitations:
 - No GPU
 - No open ports
-- 6 hours deletion
+- 6 hours delete
 
 How to:
 - Signup for an ngrok account.
